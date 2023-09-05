@@ -6,8 +6,8 @@
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
-    "test:api": "cypress run --record --parallel --spec \"cypress/e2e/api.cy.js\" --group api --ci-build-id 17",
-    "test:ui": "cypress run --record --parallel --spec \"cypress/e2e/movies.cy.js\" --group ui --ci-build-id 17",
+    "test:api": "cypress run --record --parallel --spec \"cypress/e2e/api.cy.js\" --group api --ci-build-id 18",
+    "test:ui": "cypress run --record --parallel --spec \"cypress/e2e/movies.cy.js\" --group ui --ci-build-id 18",
     "test:parallel": "npm run test:api & npm run test:ui"
   },
   "author": "Komshuk",
