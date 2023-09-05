@@ -1,0 +1,56 @@
+[
+    {
+        "name": "5 cinema viewers",
+        "data": [
+            {
+                "row": 3,
+                "seat": 2
+            },
+            {
+                "row": 3,
+                "seat": 3
+            },
+            {
+                "row": 3,
+                "seat": 4
+            },
+            {
+                "row": 3,
+                "seat": 5
+            },
+            {
+                "row": 3,
+                "seat": 6
+            }
+        ]
+    },
+    {
+        "name": "6 cinema viewers",
+        "data": [
+            {
+                "row": 4,
+                "seat": 3
+            },
+            {
+                "row": 4,
+                "seat": 4
+            },
+            {
+                "row": 4,
+                "seat": 5
+            },
+            {
+                "row": 4,
+                "seat": 7
+            },
+            {
+                "row": 4,
+                "seat": 8
+            },
+            {
+                "row": 4,
+                "seat": 9
+            }
+        ]
+    }
+]
