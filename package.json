@@ -1,14 +1,21 @@
 {
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "cypress": "^12.17.1",
+    "npm-run-all": "^4.1.5"
   },
   "name": "7.8",
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
-    "test:api": "cypress run --record --parallel --spec \"cypress/e2e/api.cy.js\" --group api --ci-build-id 18",
-    "test:ui": "cypress run --record --parallel --spec \"cypress/e2e/movies.cy.js\" --group ui --ci-build-id 18",
-    "test:parallel": "npm run test:api & npm run test:ui"
+    "test:api:chrome": "cypress run --record --group api --spec \"cypress/e2e/api.cy.js\" --browser chrome",
+    "test:ui:chrome": "cypress run --record --group ui --spec \"cypress/e2e/movies.cy.js\" --browser chrome",
+    "test:parallel:chrome": "run-p -c test:api:chrome test:ui:chrome",
+    "test:api:firefox": "cypress run --record --group api --spec \"cypress/e2e/api.cy.js\" --browser firefox",
+    "test:ui:firefox": "cypress run --record --group ui --spec \"cypress/e2e/movies.cy.js\" --browser firefox",
+    "test:parallel:firefox": "run-p -c test:api:firefox test:ui:firefox",
+    "test:api:electron": "cypress run --record --group api --spec \"cypress/e2e/api.cy.js\" --browser electron",
+    "test:ui:electron": "cypress run --record --group ui --spec \"cypress/e2e/movies.cy.js\" --browser electron",
+    "test:parallel:electron": "run-p -c test:api:electron test:ui:electron"
   },
   "author": "Komshuk",
   "license": "ISC",
